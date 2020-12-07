@@ -5,6 +5,8 @@ OBJ=$(OBJ:.s=.o)
 
 all: $(NAME)
 
+$(NAME):
+
 %.o: %.s
 	nasm -c $< -o $@
 
