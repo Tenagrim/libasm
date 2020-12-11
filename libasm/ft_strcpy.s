@@ -12,4 +12,5 @@ _ft_strcpy:	xor		rcx, rcx
 			cmp		dl, 0
 			jz		.ret
 			jmp		.loop
+
 .ret		ret

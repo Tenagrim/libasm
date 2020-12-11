@@ -3,7 +3,10 @@ NAME=libasm.a
 HEADER=libasm.h
 SRC=ft_strlen.s \
 	ft_strcmp.s \
-	ft_strcpy.s
+	ft_strcpy.s \
+	ft_strdup.s \
+	ft_write.s \
+	ft_read.s
 OBJ=$(SRC:.s=.o)
 
 all: $(NAME)
@@ -16,7 +19,7 @@ $(NAME): $(OBJ)
 	nasm -f macho64 $<
 
 test: main.c $(NAME)
-	gcc main.c -I. $(NAME) && ./a.out
+	gcc main.c -g -I. $(NAME) && ./a.out
 
 clean:
 	rm -f $(OBJ)
