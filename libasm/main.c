@@ -6,7 +6,7 @@
 /*   By: gshona <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 21:45:20 by gshona            #+#    #+#             */
-/*   Updated: 2020/12/11 21:56:12 by gshona           ###   ########.fr       */
+/*   Updated: 2020/12/12 16:20:46 by gshona           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,18 +187,18 @@ int		main (void)
 
 
 
-/*
+
 	printf("**************READ****************\n");
 
-	char *line = malloc(2000);
+	char *lline = malloc(2000);
 	fd = open("testfile", O_RDONLY);
-	read_t(-1, line, 10);
-	read_t(100, line, 10);
-	read_t(fd, line, 100);
+	read_t(-1, lline, 10);
+	read_t(100, lline, 10);
+	read_t(fd, lline, 100);
 	close(fd);
 	system("cat testfile");
 	printf("\n");
-	//read_t(1, line, 10);
-	free(line);
-*/
+	read_t(1, line, 10);
+	free(lline);
+
 }

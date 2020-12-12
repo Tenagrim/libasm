@@ -1,4 +1,5 @@
 ;int		ft_strcmp(const char *string1, const char *string2);
+
 			global	_ft_strcmp
 
 			section	.text

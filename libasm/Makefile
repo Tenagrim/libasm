@@ -18,9 +18,6 @@ $(NAME): $(OBJ)
 %.o: %.s
 	nasm -f macho64 $<
 
-test: main.c $(NAME)
-	gcc main.c -g -I. $(NAME) && ./a.out
-
 clean:
 	rm -f $(OBJ)
 

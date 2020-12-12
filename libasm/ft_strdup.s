@@ -19,4 +19,3 @@ _ft_strdup:	xor		rax, rax
 			mov		rdi, rax
 			call	_ft_strcpy
 .ret		ret
-			
